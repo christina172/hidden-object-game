@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Object Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Hidden Object Game
+        </h1>
+    </header>
+    <main>
+        <div class="description">
+            Find hidden objects by clicking on them and selecting their names from the dropdown list. If you are
+            correct, a green border will appear around the object. You need to find 14 objects: <span class="yellow">a
+                saxophone</span>, <span class="orange">a chinese
+                fan</span>, <span class="yellow">a butterfly</span>, <span class="green">a bug</span>, <span
+                class="orange">a key</span>, <span class="yellow">a turtle</span>, <span class="sand">an
+                hourglass</span>, <span class="grey">a hat</span>, <span class="yellow">a magic lamp</span>, <span
+                class="red">a playing card</span>, <span class="grey">milk</span>, <span class="green">scallions</span>,
+            <span class="yellow">cheese</span>, <span class="turquoise">a brooch</span>.
+        </div>
+        <div class="image-container">
+            <div class="screen">
+                <button type="button" class="start">Start<img src="sherlock-holmes-1.png" alt="sherlock holmes"
+                        class="detective"></button>
+            </div>
+            <img src="room.jpg" alt="dining room" class="room">
+            <img src="saxophone.png" class="saxophone">
+            <img src="fan.png" class="fan">
+            <img src="butterfly.png" class="butterfly">
+            <img src="bug.png" class="bug">
+            <img src="key.png" class="key">
+            <img src="turtle.png" class="turtle">
+            <img src="hourglass.png" class="hourglass">
+            <img src="hat.png" class="hat">
+            <img src="magic-lamp.png" class="lamp">
+            <img src="playing-card.png" class="card">
+            <img src="milk.png" class="milk">
+            <img src="scallions.png" class="scallions">
+            <img src="cheese.png" class="cheese">
+            <img src="brooch.png" class="brooch">
+            <div class="win">
+                <div class="message">
+                    <h2>Congratulations! You won.</h2>
+                    <div class="time-message"></div>
+                    <form class="enter-name">
+                        <label for="name">Please, enter your name: </label>
+                        <input type="text" id="name" name="name">
+                        <button type="submit" class="submit">Submit</button>
+                        <button type="button" class="cancel">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="restart">Restart</button>
+        <div class="form-container">
+            <form class="select-object">
+                <label for="hidden-object">I found: </label>
+                <select name="hidden-object" id="hidden-object">
+                    <option value="saxophone">saxophone</option>
+                    <option value="fan">chinese fan</option>
+                    <option value="butterfly">butterfly</option>
+                    <option value="bug">bug</option>
+                    <option value="key">key</option>
+                    <option value="turtle">turtle</option>
+                    <option value="hourglass">hourglass</option>
+                    <option value="hat">hat</option>
+                    <option value="lamp">magic lamp</option>
+                    <option value="card">playing card</option>
+                    <option value="milk">milk</option>
+                    <option value="scallions">scallions</option>
+                    <option value="cheese">cheese</option>
+                    <option value="brooch">brooch</option>
+                </select>
+                <button type="submit" class="choose">✓</button>
+                <button type="button" class="close">✗</button>
+            </form>
+        </div>
+        <div class="best-scores">
+            <h2>Best scores</h2>
+            <ol></ol>
+        </div>
+    </main>
+    <footer>Images by <a href="https://pixabay.com/photos/old-18-century-dining-room-interior-3966161/">Vlad
+            Vasnetsov</a>, <a href="https://pixabay.com/users/alles-2597842/">Alexander Lesnitsky</a>, <a
+            href="https://pixabay.com/photos/scallion-scallions-ramp-ramps-2316378/">Joe</a>, <a
+            href="https://pixabay.com/photos/cheese-with-holes-2704448/">garyzinc1221</a>, <a
+            href="https://pixabay.com/vectors/sherlock-holmes-detective-147255/">OpenClipart-Vectors</a> from <a
+            href="https://pixabay.com/">Pixabay</a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+<!-- 🔍 -->
